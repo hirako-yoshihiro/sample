@@ -8,7 +8,7 @@
   var isMotion;
 
   $(function () {
-    $arrow = $("#arrow");
+    $arrow = $("#message");
     $window = $(window);
 
     isMotion = false;
