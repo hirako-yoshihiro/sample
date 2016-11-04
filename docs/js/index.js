@@ -36,15 +36,28 @@
 
     var l = 7;
     if (x > l) { // 右
+        $arrow.css({
+            x: -stageW
+        });
     	document.getElementById("message").textContent="右";
     }
     else if (x < -l) { // 左
+        $arrow.css({
+            x: stageW
+        });
     	document.getElementById("message").textContent="左";
     }
     else if (y > l) { // 上
+        $arrow.css({
+            x: -stageH
+        });
+    	document.getElementById("message").textContent="右";
     	document.getElementById("message").textContent="上";
     }
     else if (y < -l) { // 下
+        $arrow.css({
+            x: stageH
+        });
     	document.getElementById("message").textContent="下";
     }
     else return;
