@@ -36,44 +36,16 @@
 
     var l = 7;
     if (x > l) { // 右
-      $arrow.css({
-        x: -stageW
-      });
-      $arrow.children("img").css({
-        "-webkit-transform": "rotate(90deg)",
-        "-moz-transform": "rotate(90deg)",
-        "transform": "rotate(90deg)"
-      });
+    	document.getElementById("message").textContent="右";
     }
     else if (x < -l) { // 左
-      $arrow.css({
-        x: stageW
-      });
-      $arrow.children("img").css({
-        "-webkit-transform": "rotate(-90deg)",
-        "-moz-transform": "rotate(-90deg)",
-        "transform": "rotate(-90deg)"
-      });
+    	document.getElementById("message").textContent="左";
     }
     else if (y > l) { // 上
-      $arrow.css({
-        y: stageH
-      });
-      $arrow.children("img").css({
-        "-webkit-transform": "rotate(0deg)",
-        "-moz-transform": "rotate(0deg)",
-        "transform": "rotate(0deg)"
-      });
+    	document.getElementById("message").textContent="上";
     }
     else if (y < -l) { // 下
-      $arrow.css({
-        y: -stageH
-      });
-      $arrow.children("img").css({
-        "-webkit-transform": "rotate(180deg)",
-        "-moz-transform": "rotate(180deg)",
-        "transform": "rotate(180deg)"
-      });
+    	document.getElementById("message").textContent="下";
     }
     else return;
 
