@@ -4,6 +4,7 @@
   var $window;
   var stageW;
   var stageH;
+  var stageD;
 
   var isMotion;
 
@@ -58,6 +59,18 @@
             x: stageH
         });
     	document.getElementById("message").textContent="上に動きました";
+    }
+    else if (z < l) { // 後ろへ移動
+        $arrow.css({
+            z: -stageD
+        });
+    	document.getElementById("message").textContent="後ろに動きました";
+    }
+    else if (z < -l) { // 前へ移動
+        $arrow.css({
+            z: stageD
+        });
+    	document.getElementById("message").textContent="前に動きました";
     }
     else return;
 
