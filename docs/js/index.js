@@ -34,7 +34,7 @@
 
     $arrow.stop();
 
-    var l = 1;
+    var l = 10;
     if (x > l) { // 左へ移動
         $arrow.css({
             x: -stageW
