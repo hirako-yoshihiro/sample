@@ -34,31 +34,30 @@
 
     $arrow.stop();
 
-    var l = 7;
-    if (x > l) { // 右
+    var l = 1;
+    if (x > l) { // 左へ移動
         $arrow.css({
             x: -stageW
         });
-    	document.getElementById("message").textContent="右";
+    	document.getElementById("message").textContent="左に動きました";
     }
-    else if (x < -l) { // 左
+    else if (x < -l) { // 右へ移動
         $arrow.css({
             x: stageW
         });
-    	document.getElementById("message").textContent="左";
+    	document.getElementById("message").textContent="右に動きました";
     }
-    else if (y > l) { // 上
+    else if (y > l) { // 下へ移動
         $arrow.css({
             x: -stageH
         });
-    	document.getElementById("message").textContent="右";
-    	document.getElementById("message").textContent="上";
+    	document.getElementById("message").textContent="下に動きました";
     }
-    else if (y < -l) { // 下
+    else if (y < -l) { // 上へ移動
         $arrow.css({
             x: stageH
         });
-    	document.getElementById("message").textContent="下";
+    	document.getElementById("message").textContent="上に動きました";
     }
     else return;
 
