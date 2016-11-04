@@ -84,5 +84,6 @@
   function resizeHandler(event) {
     stageW = $window.width();
     stageH = $window.height();
+    stageD = $window.depth();
   }
 })();
