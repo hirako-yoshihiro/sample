@@ -60,7 +60,7 @@
         });
     	document.getElementById("message").textContent="上に動きました";
     }
-    else if (z < l) { // 後ろへ移動
+    else if (z > l) { // 後ろへ移動
         $arrow.css({
             z: -stageD
         });
